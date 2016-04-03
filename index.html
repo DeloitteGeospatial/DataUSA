@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>DataUSA</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--<link href="assets/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<!-- *****************************************************************************************************************
+ HEADERWRAP
+ ***************************************************************************************************************** -->
+<section id="section1">
+    <div id="headerwrap"
+         style="background:url('assets/img/datausa_home.jpg') no-repeat center center fixed;-webkit-background-size:cover;background-size:cover;min-height:100vh">
+        <div class="col-sm-4"
+             style="opacity:.75;background-color:rgba(0,0,0,.75);margin-top:65vh;text-align:right">
+            <h1 style="font-size:5em;color: rgb(22, 212, 167); text-align: right;padding-left:0;margin-left:0;">DataUSA</h1>
+
+            <h1 style="color: rgb(22, 212, 167)">lessons learned from ACS to BLS</h3>
+            <!--<h5>February 6<sup>th</sup> - 8<sup>th</sup>, 2015</h5>-->
+        </div>
+        <div class="col-sm-12" style="text-align:center; color:rgb(22,212,167)">
+            <div style="margin:0 0 0 0">
+                <a style='color:rgb(22,212,167)' href="#slide1" class="fa fa-arrow-circle-down fa-5x"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /headerwrap -->
+<!-- <img id="map-par" style="position:fixed;z-index:-1; top:0px" frameBorder='0' src='assets/img/datausa_home.jpg'> -->
+
+
+<!-- *****************************************************************************************************************
+ SLIDE 1
+ ***************************************************************************************************************** -->
+<div id="contain-par" style="background-color:white;z-index: 999;">
+
+    <section id="section2">
+        <div id="slide1" class="container mtb" style="margin-top:30px;height:100vh">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>what is DataUSA?</h1>
+
+                    <div class="hline"></div>
+                    <h2>
+                        Web platform for authortitative data
+                    </h2>
+                    <h2>
+                        Easily understood
+                    </h2>
+                    <h2>
+                        Extensible
+                    </h2>
+                    <h2>
+                        Deployable
+                    </h2>
+                    <h2>
+                        Collaboration between:
+                    </h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>Deloitte</li>
+                            <li>MIT Media Lab</li>
+                            <li>DataWheel</li>
+                        </h3>
+                    </ul>
+                    <h2>But ultimately, it's a proof of the possible</h2>
+                </div>
+            </div>
+            <!--/row -->
+                <div class="col-sm-12 downarrow" style="text-align:center">
+                    <div style="margin:0 0 0 0">
+                        <a href="#slide2" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+        </div>
+        <!--/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 2
+     ***************************************************************************************************************** -->
+    <section id="section3">
+        <div id="slide2" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the included datasets</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>ACS</li>
+                            <li>ACS PUMS</li>
+                            <li>BEA Input-Output</li>
+                            <li>BLS Assorted</li>
+                            <li>University of Wisconsin County Health Rankings (CHR)</li>
+                            <li>Integrated Postsecondary Education Data Systems (IPEDS)</li>
+                            <li>O*Net</li>
+                        </ul>
+                    </h3>
+                    <h2>the key was their interoperability</h2>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/acs_source.png">
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+    </section>
+
+
+    <!-- *****************************************************************************************************************
+     SLIDE 3
+     ***************************************************************************************************************** -->
+    <section id="section4">
+        <div id="slide3" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the demo</h1>
+
+                    <!-- <div class="hline"></div> -->
+                </div>
+                <div id='datausaDemo' class="col-xs-12" >
+                    <iframe id='ddiframe' width='100%' style='height:100vh' src="http://beta.datausa.io" frameborder='0'></iframe>
+                    <button onclick='expand()' class='btn' style='position:absolute;top:10px;right:25px;opacity:.5'><i id='expandCollapse' class='fa fa-expand'></i></button>
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide4" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 3
+     ***************************************************************************************************************** -->
+    <section id="section5">
+        <div id="slide4" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the extensibility</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-xs-12">
+                    <h2>embeddable content</h2>
+                    <pre><code>&lt;iframe width="100%" height="100%" src="http://beta.datausa.io/profile/cip/110701/employment/locations?" frameborder="0"&gt;&lt;/iframe&gt;
+                    </code></pre>
+
+                </div>
+                <div class="col-xs-12" style='height:500px'>
+                    <h2>this is the result</h2>
+                    <iframe width="100%" height="100%" src="http://beta.datausa.io/profile/cip/110701/employment/locations?" frameborder="0" ></iframe>
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide5" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+    </section>
+    <!-- *****************************************************************************************************************
+     SLIDE 4
+     ***************************************************************************************************************** -->
+    <section id="section6">
+        <div id="slide5" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the API</h1>
+
+                    <div class="hline"></div>
+
+                    <div class='col-sm-6' id='apiResponse'>
+                        <h3>
+                       <a target='_blank' href='http://db.datausa.io/api/?sort=asc&show=geo%2Cacs_ind&geo=16000US3663000&required=num_emp%2Cnum_emp_moe%2Cnum_emp_rca&sumlevel=place%2C1&limit=5&year=latest&where=num_emp%3A%210&order=num_emp'>http://db.datausa.io/api/?<br>sort=asc&<br>show=geo,acs_ind&<br>geo=16000US3663000&<br>required=num_emp,num_emp_moe,num_emp_rca&<br>sumlevel=place,1&<br>limit=5&year=latest&<br>where=num_emp:!0&<br>order=num_emp</a></h3>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+<!--                     <h2>more like the success</h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>
+                                model ave accuracy: 80%
+                            </li>
+                            <ul style="margin-left:25px">
+                                <li>
+                                   high: 95%
+                                </li>
+                                <li>
+                                    low: 50%
+                                </li>
+                            </ul>
+                            <li>
+                                cities passed: 20
+                            </li>
+                            <li>
+                                cities failed: 1 (Boston)
+                            </li>
+                        </h3>
+                    </ul>
+ -->                </div>
+                <div class="col-sm-6">
+                    <!-- <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/ballet.gif"> -->
+                    <!--<img class="img-responsive" style="border:solid rgb(22, 212, 167); margin:70px auto 0 auto" src="assets/img/minn.jpg">-->
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide6" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 5
+     ***************************************************************************************************************** -->
+    <section id="section7">
+        <div id="slide6" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>The technology</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-12" style="margin-top:50px">
+                    <img class='img img-responsive' style='width:100%' src='assets/img/infrastructure.png'>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">1</i>
+                    </span>
+
+                        <h3>python</h3>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">2</i>
+                    </span>
+
+                        <h3>nginx</h3>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">3</i>
+                    </span>
+
+                        <h3>gunicorn</h3>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">4</i>
+                    </span>
+
+                        <h3>postgres</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#footerwrap" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     FOOTER
+     ***************************************************************************************************************** -->
+    <section id="section8">
+        <div id="footerwrap" style='height:100vh'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12" style="text-align:center;padding-top:30vh">
+                        <h1>questions?</h1>
+                        <br/>
+                        <div class="hline-w"></div>
+                            <h3>
+                                zach whitman<br/>
+                                zwhitman@deloitte.com<br/>
+                                geospatial practice<br/>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--/row -->
+            </div>
+            <!--/container -->
+        </div>
+        <!--/footerwrap -->
+    </section>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/retina-1.1.0.js"></script>
+<script src="assets/js/jquery.hoverdir.js"></script>
+<script src="assets/js/jquery.hoverex.min.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/jquery.isotope.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<script>
+    // Portfolio
+    (function ($) {
+        "use strict";
+        var $container = $('.portfolio'),
+                $items = $container.find('.portfolio-item'),
+                portfolioLayout = 'fitRows';
+
+        if ($container.hasClass('portfolio-centered')) {
+            portfolioLayout = 'masonry';
+        }
+
+        $container.isotope({
+            filter: '*',
+            animationEngine: 'best-available',
+            layoutMode: portfolioLayout,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            },
+            masonry: {}
+        }, refreshWaypoints());
+
+        function refreshWaypoints() {
+            setTimeout(function () {
+            }, 1000);
+        }
+
+        $('nav.portfolio-filter ul a').on('click', function () {
+            var selector = $(this).attr('data-filter');
+            $container.isotope({filter: selector}, refreshWaypoints());
+            $('nav.portfolio-filter ul a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
+
+        function getColumnNumber() {
+            var winWidth = $(window).width(),
+                    columnNumber = 1;
+
+            if (winWidth > 1200) {
+                columnNumber = 5;
+            } else if (winWidth > 950) {
+                columnNumber = 4;
+            } else if (winWidth > 600) {
+                columnNumber = 3;
+            } else if (winWidth > 400) {
+                columnNumber = 2;
+            } else if (winWidth > 250) {
+                columnNumber = 1;
+            }
+            return columnNumber;
+        }
+
+        function setColumns() {
+            var winWidth = $(window).width(),
+                    columnNumber = getColumnNumber(),
+                    itemWidth = Math.floor(winWidth / columnNumber);
+
+            $container.find('.portfolio-item').each(function () {
+                $(this).css({
+                    width: itemWidth + 'px'
+                });
+            });
+        }
+
+        function setPortfolio() {
+            setColumns();
+            $container.isotope('reLayout');
+        }
+
+        $container.imagesLoaded(function () {
+            setPortfolio();
+        });
+
+        $(window).on('resize', function () {
+            setPortfolio();
+        });
+    })(jQuery);
+</script>
+<script>
+    $(window).bind('scroll', function (e) {
+        parallaxScroll();
+    });
+
+    function parallaxScroll() {
+        var scrolled = $(window).scrollTop();
+        $('#map-par').css('top', (0 - (scrolled * .25)) + 'px');
+        $('#contain-par').css('top', (0 - (scrolled * .75)) + 'px');
+    }
+</script>
+<script>
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        // scrollTop: target.offset().top - 50
+                        scrollTop: target.offset().top - 0
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+<script>
+    function scrollToAnchor(aid) {
+        $('html,body').animate({
+            scrollTop: aid.offset().top
+        }, 'slow');
+
+    }
+
+    var i = 1;
+    $(document).keydown(function (event) {
+
+        if (event.keyCode == 38) {
+            i--;
+            scrollToAnchor($("#section" + i + ""));
+        } else if (event.keyCode == 40) {
+            i++;
+            event.preventDefault();
+            scrollToAnchor($("#section" + i + ""));
+        }
+    });
+
+
+function expand(){
+    $('#datausaDemo').toggleClass('expanded')
+    $('#expandCollapse').toggleClass('fa-compress')
+}
+
+
+function syntaxHighlight(json) {
+    if (typeof json != 'string') {
+         json = JSON.stringify(json, undefined, 2);
+    }
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    });
+}
+
+//get API call
+var link = 'http://db.datausa.io/api/?sort=asc&show=geo%2Cacs_ind&geo=16000US3663000&required=num_emp%2Cnum_emp_moe%2Cnum_emp_rca&sumlevel=place%2C1&limit=5&year=latest&where=num_emp%3A%210&order=num_emp'
+
+/*$.getJSON(link,function(data){
+    var str = JSON.stringify(data, null, 2); // spacing level = 2
+    console.log(syntaxHighlight(str))
+    $('#apiResponse').html(syntaxHighlight(str))
+
+
+})
+*/
+</script>
+</body>
+</html>
