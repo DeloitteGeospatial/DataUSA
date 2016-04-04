@@ -54,26 +54,35 @@
 <div id="contain-par" style="background-color:white;z-index: 999;">
 
     <section id="section2">
-        <div id="slide1" class="container mtb" style="margin-top:30px;height:100vh">
+        <div id="slide1" class="container mtb" style="margin-top:30px">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-xs-12">
                     <h1>what is DataUSA?</h1>
 
                     <div class="hline"></div>
+                    <div class="col-xs-6">
                     <h2>
-                        Web platform for authortitative data
+                        web platform
                     </h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>website</li>
+                            <li>API</li>
+                            <li>publishing engine</li>
+                        </h3>
+                    </ul>
                     <h2>
-                        Easily understood
+                        project enabler
                     </h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>deployable</li>
+                            <li>rapid prototyping</li>
+                            <li>data assurance</li>
+                        </h3>
+                    </ul>
                     <h2>
-                        Extensible
-                    </h2>
-                    <h2>
-                        Deployable
-                    </h2>
-                    <h2>
-                        Collaboration between:
+                        collaboration between
                     </h2>
                     <ul style="padding-left: 25px">
                         <h3>
@@ -82,7 +91,14 @@
                             <li>DataWheel</li>
                         </h3>
                     </ul>
-                    <h2>But ultimately, it's a proof of the possible</h2>
+                    <h2>ultimately, it's a proof of the possible</h2>
+                    </div>
+                <div class="col-sm-6" style='margin-top:30px;padding-right:0'>
+                    <img class='img img-responsive' src='assets/img/story_example.PNG'>
+                </div>
+                </div>
+                <div class="col-xs-12" style='margin-top:10px'>
+                    <img class='img img-responsive' src='assets/img/search_example.jpg'>
                 </div>
             </div>
             <!--/row -->
@@ -107,6 +123,7 @@
                     <div class="hline"></div>
                 </div>
                 <div class="col-sm-6">
+                    <h2>the name of the game was interoperability</h2>
                     <h3>
                         <ul style="padding-left: 25px">
                             <li>ACS</li>
@@ -118,10 +135,47 @@
                             <li>O*Net</li>
                         </ul>
                     </h3>
-                    <h2>the key was their interoperability</h2>
+                    <hr>
+                    <h2>we created profiles for</h2>
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>locations</li>
+                            <li>industries</li>
+                            <li>occupations</li>
+                            <li>education</li>
+                        </ul>
+                    </h3>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/acs_source_2.png">
+                    <a target='_blank' href='http://datausa.io/about/datasets/'>
+                    <img class="img-responsive" style="margin:20px auto 0 auto" src="assets/img/acs_source_2.png">
+                    </a>
+                </div>
+                <div class="col-xs-12">
+                    <hr>
+                    <div class='col-xs-12 text-center'>
+                        <h2>key stats
+                    </div>
+                    <!-- <hr> -->
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <h3>
+                            <ul class='text-center' style="padding-left: 25px; list-style:none">
+                                <li>36,190 locations</li>
+                                <li>525 occupations</li>
+                            </ul>
+                        </h3>
+                    </div>
+                    <div class="col-xs-4">
+                        <h3>
+                            <ul class='text-center' style="padding-left: 25px;list-style:none">
+                                <li>301 industries</li>
+                                <li>2,319 higher ed. maps</li>
+                            </ul>
+                        </h3>
+                    </div>
+                    <div class='col-xs-12 text-center'>
+                        <h2>1,819,540 different visualizations
+                    </div>
                 </div>
                 <div class="col-sm-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
@@ -147,7 +201,7 @@
                     <!-- <div class="hline"></div> -->
                 </div>
                 <div id='datausaDemo' class="col-xs-12" >
-                    <iframe id='ddiframe' width='100%' style='height:100vh' src="http://beta.datausa.io" frameborder='0'></iframe>
+                    <iframe id='ddiframe' width='100%' style='height:100vh' src="http://datausa.io" frameborder='0'></iframe>
                     <button onclick='expand()' class='btn' style='position:absolute;top:10px;right:25px;opacity:.5'><i id='expandCollapse' class='fa fa-expand'></i></button>
                 </div>
                 <div class="col-sm-12" style="text-align:center">
@@ -174,13 +228,21 @@
                 </div>
                 <div class="col-xs-12">
                     <h2>embeddable content</h2>
-                    <pre><code>&lt;iframe width="100%" height="100%" src="http://beta.datausa.io/profile/cip/110701/employment/locations?" frameborder="0"&gt;&lt;/iframe&gt;
+                    <!-- <h3>this is all the code needed for web devs to add datausa to their site</h3> -->
+                    <pre><code>&lt;!-- this is all the code needed for an embeddable figure --&gt;
+
+&lt;iframe width="100%" height="100%" src="http://beta.datausa.io/profile/cip/110701/employment/locations?" frameborder="0"&gt;&lt;/iframe&gt;
+
+&lt;!-- we wanted to make this processs as easy as possible --&gt;
                     </code></pre>
 
                 </div>
                 <div class="col-xs-12" style='height:500px'>
-                    <h2>this is the result</h2>
+                    <h2>and this is the result</h2>
                     <iframe width="100%" height="100%" src="http://beta.datausa.io/profile/cip/110701/employment/locations?" frameborder="0" ></iframe>
+                </div>
+                <div class="col-xs-12" style='margin-top:50px'>
+                    <h4 style='text-align:right'>*note that you can grab the embed code from an embedded asset</h4>
                 </div>
                 <div class="col-sm-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
@@ -205,38 +267,53 @@
 
                     <div class='col-sm-6' id='apiResponse'>
                         <h3>
-                       <a target='_blank' href='http://db.datausa.io/api/?sort=asc&show=geo%2Cacs_ind&geo=16000US3663000&required=num_emp%2Cnum_emp_moe%2Cnum_emp_rca&sumlevel=place%2C1&limit=5&year=latest&where=num_emp%3A%210&order=num_emp'>http://db.datausa.io/api/?<br>sort=asc&<br>show=geo,acs_ind&<br>geo=16000US3663000&<br>required=num_emp,num_emp_moe,num_emp_rca&<br>sumlevel=place,1&<br>limit=5&year=latest&<br>where=num_emp:!0&<br>order=num_emp</a></h3>
-
+                            the base url
+                            <pre><code>http://db.datausa.io/api/?</code></pre>
+                        </h3>
+                        <h3>
+                            example query<hr>
+                            <a target='_blank' style='color:rgb(22, 212, 167);word-wrap:break-word' href='http://db.datausa.io/api/?sort=asc&show=geo%2Cacs_ind&geo=16000US3663000&required=num_emp%2Cnum_emp_moe%2Cnum_emp_rca&sumlevel=place%2C1&limit=5&year=latest&where=num_emp%3A%210&order=num_emp'>http://db.datausa.io/api/?sort=asc&show=geo,acs_ind&geo=16000US3663000&required=num_emp,num_emp_moe,num_emp_rca&sumlevel=place,1&limit=5&year=latest&where=num_emp:!0&order=num_emp</a></h3>
+                        </h3>
+                        <hr>
+                        <h3>
+                            basic API quals
+                        </h3>
+                        <h4>
+                            <table class='table'>
+                                <thead class=''>
+                                    <tr>
+                                        <td><b>resource info</b></td>
+                                        <td><b>response</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody class='table-body'>
+                                    <tr>
+                                        <td>response formats</td>
+                                        <td>json</td>
+                                    </tr>
+                                    <tr>
+                                        <td>requires authentication?</td>
+                                        <td>no...for now</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rate limited?</td>
+                                        <td>no</td>
+                                    </tr>
+                                    <tr>
+                                        <td>logic overrides</td>
+                                        <td>yes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </h4>
+                        <!-- <hr> -->
+                        <h3 class='text-right'>* what's this logic stuff?</h3>
+                    </div>
+                    <div class='col-sm-6' style='margin-top:20px'>
+                        <img class='img img-responsive' src='assets/img/api_call.png'
                     </div>
 
                 </div>
-                <div class="col-sm-6">
-<!--                     <h2>more like the success</h2>
-                    <ul style="padding-left: 25px">
-                        <h3>
-                            <li>
-                                model ave accuracy: 80%
-                            </li>
-                            <ul style="margin-left:25px">
-                                <li>
-                                   high: 95%
-                                </li>
-                                <li>
-                                    low: 50%
-                                </li>
-                            </ul>
-                            <li>
-                                cities passed: 20
-                            </li>
-                            <li>
-                                cities failed: 1 (Boston)
-                            </li>
-                        </h3>
-                    </ul>
- -->                </div>
-                <div class="col-sm-6">
-                    <!-- <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/ballet.gif"> -->
-                    <!--<img class="img-responsive" style="border:solid rgb(22, 212, 167); margin:70px auto 0 auto" src="assets/img/minn.jpg">-->
                 </div>
                 <div class="col-sm-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
@@ -257,49 +334,93 @@
         <div id="slide6" class="container mtb" style="margin-top:30px;">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>The technology</h1>
+                    <h1>the process</h1>
 
                     <div class="hline"></div>
                 </div>
                 <div class="col-sm-12" style="margin-top:50px">
                     <img class='img img-responsive' style='width:100%' src='assets/img/infrastructure.png'>
-                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
-                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-stack-1x" style="color:white">1</i>
-                    </span>
-
-                        <h3>python</h3>
-                    </div>
-                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
-                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-stack-1x" style="color:white">2</i>
-                    </span>
-
-                        <h3>nginx</h3>
-                    </div>
-                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
-                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-stack-1x" style="color:white">3</i>
-                    </span>
-
-                        <h3>gunicorn</h3>
-                    </div>
-                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
-                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-stack-1x" style="color:white">4</i>
-                    </span>
-
-                        <h3>postgres</h3>
-                    </div>
                 </div>
                 <div class="col-sm-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
-                        <a href="#footerwrap" class="fa fa-arrow-circle-down fa-5x"></a>
+                        <a href="#slide7" class="fa fa-arrow-circle-down fa-5x"></a>
                     </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 6
+     ***************************************************************************************************************** -->
+    <section id="section8">
+        <div id="slide7" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the stack</h1>
+
+                    <div class="hline"></div>
+                    <h2>everything is open source</h2>
+                </div>
+                <div class="col-sm-12" style="">
+                    <img class='img img-responsive' src='assets/img/stack.png'>
+                </div>
+                    <h2 class='text-right'>and everything is interchangable</h2>
+
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide8" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 7
+     ***************************************************************************************************************** -->
+    <section id="section9">
+        <div id="slide8" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>what's next?</h1>
+
+                    <div class="hline"></div>
+                    <h2>custom deployments</h2>
+                    <h3>
+                        <ul style='margin-left:30px'>
+                            <li>implement internal versions for organizational use</li>
+                            <li>supplement current database with organizational-specific data</li>
+                        </ul>
+                    </h3>
+                    <h2>
+                        hackathons
+                        <h3>
+                            <ul style='margin-left:30px'>
+                                <li>use as participant data source</li>
+                                <li>gather feedback</li>
+                                <li>stress-test plaform</li>
+                            </ul>
+                        </h3>
+                    </h2>
+                    <h2>
+                        DataUSA v2.0
+                    </h2>
+                        <h3>
+                            <ul style='margin-left:30px'>
+                                <li>timeseries data</li>
+                                <li>refined mapping interface</li>
+                                <li>comparative views</li>
+                                <li>SDKs</li>
+                                <li>this list gets long...</li>
+                            </ul>
+                        </h3>
                 </div>
             </div>
             <!--/row -->
@@ -311,7 +432,7 @@
     <!-- *****************************************************************************************************************
      FOOTER
      ***************************************************************************************************************** -->
-    <section id="section8">
+    <section id="section10">
         <div id="footerwrap" style='height:100vh'>
             <div class="container">
                 <div class="row">
